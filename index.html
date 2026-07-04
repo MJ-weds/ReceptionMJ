@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reception Invitation · Junaid &amp; Mahra</title>
+<meta name="description" content="Mr. & Mrs. Amjad Ali Mohammed invite you to the Walima reception of Junaid & Mahra at The Oasis Palace, Newark, CA. Dinner at 9:00 PM.">
+<meta name="theme-color" content="#06221a">
+<meta name="color-scheme" content="dark">
+<meta property="og:title" content="Reception Invitation · Junaid & Mahra">
+<meta property="og:description" content="You are graciously invited to the Walima reception at The Oasis Palace, Newark, CA. Dinner served at 9:00 PM.">
+<meta property="og:type" content="website">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Walima Invite">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23072b21'/%3E%3Cpath d='M32 6 L48 16 L58 32 L48 48 L32 58 L16 48 L6 32 L16 16 Z' fill='none' stroke='%23d9bd7f' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Reem+Kufi:wght@400;500;600&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   WALIMA RECEPTION · Junaid & Mahra
+   Theme: emerald hall & champagne gold — octagonal geometric
+   star motif, evening light at nine
+   ============================================================ */
+:root{
+  --em-0:#041b14;
+  --em-1:#06251c;
+  --em-2:#0a3628;
+  --em-3:#0f4a37;
+  --gold:#d9bd7f;
+  --gold-bright:#f1e3b5;
+  --gold-deep:#9c7c3c;
+  --mist:#eef4ef;
+  --mist-dim:#c8d8cd;
+  --line:rgba(217,189,127,.5);
+  --line-soft:rgba(217,189,127,.24);
+  --shadow:0 30px 80px -30px rgba(0,10,6,.85);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:Jost,'Segoe UI',sans-serif;font-weight:300;color:var(--mist);
+  min-height:100dvh;overflow:hidden;
+  background:radial-gradient(120% 80% at 50% 0%,var(--em-3) 0%,var(--em-2) 38%,var(--em-1) 72%,var(--em-0) 100%) fixed;
+  -webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:"";position:fixed;inset:-60px;z-index:0;pointer-events:none;opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Cg fill='none' stroke='%23d9bd7f' stroke-opacity='0.1' stroke-width='1'%3E%3Cpath d='M75 6 L108 22 L128 55 L128 95 L108 128 L75 144 L42 128 L22 95 L22 55 L42 22 Z'/%3E%3Cpath d='M75 30 L100 45 L110 75 L100 105 L75 120 L50 105 L40 75 L50 45 Z'/%3E%3Ccircle cx='75' cy='75' r='16'/%3E%3C/g%3E%3C/svg%3E");
+  background-size:150px 150px;animation:latticeDrift 60s linear infinite;
+}
+@keyframes latticeDrift{to{transform:translateY(-150px)}}
+::selection{background:rgba(217,189,127,.35)}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;touch-action:manipulation}
+a{color:inherit}
+img,svg{display:block;max-width:100%}
+:focus-visible{outline:2px solid var(--gold-bright);outline-offset:3px;border-radius:4px}
+
+#bokeh{position:fixed;inset:0;width:100%;height:100%;z-index:1;pointer-events:none}
+#burst{position:fixed;inset:0;width:100%;height:100%;z-index:60;pointer-events:none}
+
+/* ---------- loading veil ---------- */
+.veil{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:radial-gradient(120% 90% at 50% 0%,var(--em-2),var(--em-0));transition:opacity .8s ease,visibility 0s .8s}
+.veil.gone{opacity:0;visibility:hidden}
+.veil-star{width:96px;height:96px;position:relative;display:grid;place-items:center;animation:starGlow 2s ease-in-out infinite}
+.veil-star svg{width:100%;height:100%;color:var(--gold);animation:spin 14s linear infinite}
+.veil-star span{position:absolute;font-family:Cinzel,serif;font-size:1.1rem;letter-spacing:.1em;color:var(--gold-bright)}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes starGlow{0%,100%{filter:drop-shadow(0 0 0 rgba(217,189,127,0))}50%{filter:drop-shadow(0 0 22px rgba(217,189,127,.55))}}
+
+/* ---------- view system ---------- */
+main{position:relative;z-index:2}
+.view{position:fixed;inset:0;overflow-y:auto;-webkit-overflow-scrolling:touch;opacity:0;visibility:hidden;transform:translateY(20px);transition:opacity .8s ease,transform .8s cubic-bezier(.22,.9,.26,1),visibility 0s .8s;z-index:2}
+.view.active{opacity:1;visibility:visible;transform:none;transition:opacity .8s ease .15s,transform .8s cubic-bezier(.22,.9,.26,1) .15s}
+
+/* ============================================================
+   OPENING · the grand arch doors
+   ============================================================ */
+#view-opening{display:grid;place-items:center;padding:20px}
+.gate-stage{display:grid;justify-items:center;gap:clamp(16px,3.5vh,26px);transition:transform 1s cubic-bezier(.7,0,.3,1),opacity 1s ease}
+.gate-stage.through{transform:scale(2.1);opacity:0}
+.gate-eyebrow{font-size:.66rem;font-weight:500;letter-spacing:.5em;text-indent:.5em;text-transform:uppercase;color:var(--gold)}
+.gate-kufi{font-family:'Reem Kufi',sans-serif;font-size:clamp(1.5rem,6.5vw,1.9rem);color:var(--gold-bright);letter-spacing:.02em}
+.gate-title{font-family:Cinzel,serif;font-weight:600;font-size:clamp(1.35rem,6vw,1.8rem);letter-spacing:.22em;text-indent:.22em;text-transform:uppercase;text-align:center;color:var(--mist)}
+.gate-scene{perspective:1400px;position:relative}
+.gate{position:relative;width:min(78vw,330px);height:min(58vh,470px);border-radius:165px 165px 18px 18px;transform-style:preserve-3d}
+.gate-frame{position:absolute;inset:-13px;border-radius:178px 178px 24px 24px;border:1.5px solid var(--line);background:linear-gradient(180deg,rgba(8,40,30,.8),rgba(5,26,19,.9));box-shadow:var(--shadow),inset 0 0 40px rgba(0,0,0,.5)}
+.gate-frame::before{content:"";position:absolute;inset:6px;border-radius:172px 172px 18px 18px;border:1px solid var(--line-soft)}
+.gate-doors{position:absolute;inset:0;border-radius:165px 165px 18px 18px;overflow:hidden;transform-style:preserve-3d}
+.door{position:absolute;top:0;bottom:0;width:50.5%;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='70' height='70' viewBox='0 0 70 70'%3E%3Cg fill='none' stroke='%23d9bd7f' stroke-opacity='0.16' stroke-width='1'%3E%3Cpath d='M35 4 L47 23 L66 35 L47 47 L35 66 L23 47 L4 35 L23 23 Z'/%3E%3C/g%3E%3C/svg%3E") 0 0/70px 70px,linear-gradient(160deg,#0e4433,#083023 55%,#062419);box-shadow:inset 0 0 34px rgba(0,0,0,.45);transition:transform 1.5s cubic-bezier(.7,0,.22,1)}
+.door.left{left:0;border-radius:165px 0 0 18px;transform-origin:left center;border-right:1px solid rgba(217,189,127,.55)}
+.door.right{right:0;border-radius:0 165px 18px 0;transform-origin:right center;border-left:1px solid rgba(217,189,127,.55)}
+.door::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 26px,rgba(217,189,127,.07) 26px 27px)}
+.gate.open .door.left{transform:translateX(-102%) rotateY(42deg)}
+.gate.open .door.right{transform:translateX(102%) rotateY(-42deg)}
+.gate-light{position:absolute;left:50%;top:0;bottom:0;width:8px;transform:translateX(-50%) scaleX(.1);background:linear-gradient(180deg,rgba(241,227,181,0),rgba(241,227,181,.95) 30%,rgba(241,227,181,.95) 70%,rgba(241,227,181,0));filter:blur(2px);opacity:0;transition:opacity .5s ease,transform 1.5s cubic-bezier(.7,0,.22,1)}
+.gate.open .gate-light{opacity:1;transform:translateX(-50%) scaleX(30);filter:blur(26px)}
+.handle{position:absolute;left:50%;top:56%;z-index:5;width:66px;height:66px;margin:-33px 0 0 -33px;border-radius:50%;border:2px solid var(--gold);background:radial-gradient(circle at 35% 30%,rgba(241,227,181,.28),rgba(217,189,127,.08) 60%,transparent);display:grid;place-items:center;color:var(--gold-bright);box-shadow:0 0 0 6px rgba(217,189,127,.08),0 8px 24px -6px rgba(0,0,0,.6);transition:transform .4s cubic-bezier(.6,-.3,.4,1.4),opacity .35s ease}
+.handle::before{content:"";position:absolute;inset:-11px;border-radius:50%;border:1px solid rgba(241,227,181,.7);animation:handleRing 2.4s ease-out infinite}
+@keyframes handleRing{0%{transform:scale(.82);opacity:.9}70%{transform:scale(1.3);opacity:0}100%{opacity:0}}
+.handle svg{width:24px;height:24px}
+.gate.open .handle{transform:scale(.3);opacity:0}
+.gate.open .handle::before{display:none}
+.gate-draw{position:absolute;inset:-13px;pointer-events:none;overflow:visible}
+.gate-draw path{fill:none;stroke:var(--gold-bright);stroke-width:1.6;stroke-dasharray:1;stroke-dashoffset:1;animation:drawArch 2.4s cubic-bezier(.4,0,.2,1) .4s forwards;filter:drop-shadow(0 0 6px rgba(241,227,181,.55))}
+@keyframes drawArch{to{stroke-dashoffset:0}}
+.gate-hint{font-size:.64rem;font-weight:500;letter-spacing:.4em;text-indent:.4em;text-transform:uppercase;color:rgba(241,227,181,.8);animation:hintPulse 2.6s ease-in-out infinite;transition:opacity .4s}
+.gate-hint.hide{opacity:0}
+@keyframes hintPulse{0%,100%{opacity:.45}50%{opacity:1}}
+
+/* ============================================================
+   SHARED · emerald glass OCTAGON panels (distinct silhouette)
+   ============================================================ */
+.wrap{max-width:580px;margin:0 auto;padding:clamp(20px,5vw,32px)}
+.panel{
+  position:relative;color:var(--mist);
+  background:linear-gradient(180deg,rgba(14,62,46,.66),rgba(8,38,28,.82));
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border:1px solid var(--line);
+  /* clipped octagon corners → unmistakably different from the wedding's rectangles */
+  clip-path:polygon(26px 0,calc(100% - 26px) 0,100% 26px,100% calc(100% - 26px),calc(100% - 26px) 100%,26px 100%,0 calc(100% - 26px),0 26px);
+  box-shadow:var(--shadow);
+  padding:clamp(34px,8.5vw,52px) clamp(24px,6.5vw,44px);overflow:hidden;
+}
+/* inner octagon keyline drawn as an SVG overlay so it follows the clip */
+.panel-edge{position:absolute;inset:9px;z-index:0;pointer-events:none;color:var(--line-soft)}
+.panel-edge path{fill:none;stroke:currentColor;stroke-width:1}
+.panel > *:not(.panel-edge){position:relative;z-index:1}
+.panel + .panel{margin-top:clamp(20px,5vw,30px)}
+.eyebrow{font-size:.64rem;font-weight:500;letter-spacing:.46em;text-indent:.46em;text-transform:uppercase;color:var(--gold);text-align:center}
+.rule{display:flex;align-items:center;gap:14px;margin:4px auto;max-width:270px;color:var(--gold)}
+.rule::before,.rule::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--line))}
+.rule::after{background:linear-gradient(90deg,var(--line),transparent)}
+.rule span{font-size:.7rem;letter-spacing:0}
+.rule svg{width:16px;height:16px}
+
+.center{text-align:center}
+.stack{display:grid;gap:16px;justify-items:center}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity 1s ease,transform 1s cubic-bezier(.22,.9,.26,1)}
+.reveal.in{opacity:1;transform:none}
+
+.kufi{font-family:'Reem Kufi',sans-serif;font-size:1.15rem;color:var(--gold);letter-spacing:.02em}
+.arabic{font-family:'Scheherazade New',serif;direction:rtl;font-size:clamp(1.42rem,6vw,1.78rem);line-height:2.05;color:var(--gold-bright);text-align:center}
+.translation{font-weight:300;font-size:clamp(.98rem,4.2vw,1.08rem);line-height:1.95;color:var(--mist-dim);text-align:center;max-width:42ch;margin:0 auto;letter-spacing:.015em}
+.cite{font-size:.6rem;font-weight:500;letter-spacing:.4em;text-indent:.4em;text-transform:uppercase;color:var(--gold)}
+
+.host-line{font-weight:300;font-size:clamp(.98rem,4.2vw,1.1rem);line-height:1.9;color:var(--mist-dim);max-width:36ch;margin:0 auto;letter-spacing:.02em}
+.host-line b{font-weight:500;color:var(--mist);letter-spacing:.04em}
+
+/* readable couple names — Cormorant Garamond, warm & legible on emerald */
+.name{
+  font-family:'Cormorant Garamond',serif;font-weight:600;font-style:italic;
+  font-size:clamp(1.9rem,8.5vw,2.5rem);line-height:1.25;letter-spacing:.01em;
+  background:linear-gradient(115deg,#a5843f,#dfc386 40%,#f6ecc9 50%,#dfc386 60%,#a5843f);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.role{font-size:.58rem;font-weight:500;letter-spacing:.5em;text-indent:.5em;text-transform:uppercase;color:rgba(217,189,127,.85)}
+.knot{display:flex;align-items:center;gap:16px;width:min(80%,280px);margin:6px auto;color:var(--gold)}
+.knot::before,.knot::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--line))}
+.knot::after{background:linear-gradient(90deg,var(--line),transparent)}
+.knot svg{width:22px;height:22px;flex:none}
+
+.event-word{font-family:Cinzel,serif;font-weight:700;font-size:clamp(1.6rem,7.5vw,2.2rem);letter-spacing:.3em;text-indent:.3em;text-transform:uppercase;color:var(--mist)}
+.time-lead{font-weight:300;font-size:1.02rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mist-dim)}
+.time-big{font-family:Cinzel,serif;font-weight:700;font-size:clamp(2.7rem,13vw,3.7rem);line-height:1.1;background:linear-gradient(115deg,#a5843f,#e5cd92 45%,#f8efce 50%,#e5cd92 55%,#a5843f);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:goldSheen 5s ease-in-out infinite}
+@keyframes goldSheen{0%,100%{background-position:0% 0}50%{background-position:100% 0}}
+.date-line{font-family:Cinzel,serif;font-weight:500;font-size:1.05rem;letter-spacing:.1em;color:var(--mist)}
+.note-line{font-weight:300;font-size:1rem;color:var(--mist-dim);line-height:1.9;max-width:38ch;margin:0 auto;letter-spacing:.02em}
+
+/* ---------- scratch-to-reveal (time + date + countdown) ---------- */
+.scratch-wrap{width:min(94%,380px);margin:6px auto 0;display:grid;gap:9px}
+.scratch-hint{font-size:.6rem;font-weight:500;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);text-align:center;transition:opacity .5s}
+.scratch-hint.gone{opacity:0}
+.scratch-card{position:relative;width:100%;border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:inset 0 0 0 1px rgba(217,189,127,.14),0 12px 30px -18px rgba(0,10,6,.6);isolation:isolate}
+.scratch-reveal{padding:24px 16px;background:linear-gradient(180deg,rgba(10,54,40,.95),rgba(6,37,28,.98));display:grid;gap:10px;justify-items:center;text-align:center}
+.scratch-canvas{position:absolute;inset:0;width:100%;height:100%;z-index:2;cursor:grab;touch-action:none;transition:opacity .6s ease}
+.scratch-canvas.cleared{opacity:0;pointer-events:none}
+.cd{display:flex;gap:9px;justify-content:center;flex-wrap:wrap;margin-top:2px}
+.cd .unit{min-width:62px;padding:12px 8px 9px;border:1px solid var(--line-soft);border-radius:12px;background:rgba(4,26,19,.4);display:grid;gap:3px;justify-items:center}
+.cd b{font-family:Cinzel,serif;font-weight:600;font-size:1.4rem;color:var(--gold-bright);font-variant-numeric:tabular-nums}
+.cd small{font-size:.54rem;font-weight:500;letter-spacing:.26em;text-transform:uppercase;color:rgba(200,216,205,.6)}
+
+.venue-name{font-family:Cinzel,serif;font-weight:600;font-size:clamp(1.35rem,6.4vw,1.75rem);letter-spacing:.12em;text-transform:uppercase;color:var(--gold-bright)}
+.addr{font-weight:300;font-size:1.02rem;line-height:1.85;color:var(--mist-dim);letter-spacing:.04em}
+.map-frame{width:100%;aspect-ratio:16/11;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 18px 44px -20px rgba(0,10,6,.7);background:#0a3628}
+.map-frame iframe{width:100%;height:100%;border:0}
+.btn-row{display:grid;gap:12px;width:100%}
+@media (min-width:440px){.btn-row.two{grid-template-columns:1fr 1fr}}
+
+.btn{min-height:54px;border-radius:12px;padding:14px 22px;font-family:Jost,sans-serif;font-weight:500;font-size:.76rem;letter-spacing:.26em;text-indent:.1em;text-transform:uppercase;display:inline-flex;align-items:center;justify-content:center;gap:10px;transition:transform .3s,box-shadow .3s,background .3s,color .3s,border-color .3s;-webkit-tap-highlight-color:transparent}
+.btn:active{transform:scale(.965)}
+.btn-gold{background:linear-gradient(135deg,#f0dfa9,#cfa960);color:#241a06;box-shadow:0 16px 36px -14px rgba(160,125,60,.8),inset 0 1px 0 rgba(255,248,222,.85)}
+.btn-gold:hover{transform:translateY(-2px)}
+.btn-ghost{border:1px solid var(--line);color:var(--gold-bright);background:rgba(241,227,181,.04)}
+.btn-ghost:hover{background:rgba(241,227,181,.1);border-color:var(--gold-bright)}
+.btn-ghost.picked,.btn-gold.picked{box-shadow:0 0 0 2px var(--gold-bright),0 16px 36px -14px rgba(160,125,60,.7)}
+.btn-wide{width:100%}
+.btn[disabled]{opacity:.55;pointer-events:none}
+
+.chip{display:inline-flex;align-items:center;gap:10px;padding:11px 20px;border-radius:12px;border:1px solid var(--line);background:rgba(241,227,181,.06);font-size:.68rem;font-weight:400;letter-spacing:.14em;color:var(--mist-dim)}
+.chip b{color:var(--gold-bright)}
+.chip button{font-size:.66rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);text-decoration:underline;text-underline-offset:3px}
+
+/* ---------- RSVP (final section) ---------- */
+.rsvp-title{font-family:Cinzel,serif;font-weight:600;font-size:clamp(1.5rem,6.6vw,1.95rem);letter-spacing:.14em;text-indent:.14em;text-transform:uppercase;color:var(--gold-bright)}
+.rsvp-sub{font-size:1rem;font-weight:300;color:var(--mist-dim);letter-spacing:.02em}
+.field{display:grid;gap:9px;text-align:left}
+.field span{font-size:.62rem;font-weight:500;letter-spacing:.34em;text-transform:uppercase;color:var(--gold)}
+.field input{font-family:Jost,sans-serif;font-weight:400;font-size:1.05rem;color:var(--mist);background:rgba(4,26,19,.5);border:1px solid var(--line-soft);border-radius:12px;padding:15px 16px;width:100%;transition:border-color .3s,box-shadow .3s}
+.field input:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 4px rgba(217,189,127,.14)}
+.field input::placeholder{color:rgba(200,216,205,.45)}
+.field.shake{animation:shake .45s ease}
+@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-7px)}40%{transform:translateX(7px)}60%{transform:translateX(-5px)}80%{transform:translateX(5px)}}
+.q{font-family:Cinzel,serif;font-size:1.02rem;letter-spacing:.08em;color:var(--mist)}
+.choice{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:390px){.choice{grid-template-columns:1fr}}
+.extra{display:grid;gap:6px;overflow:hidden;max-height:0;opacity:0;transition:max-height .7s cubic-bezier(.25,.8,.3,1),opacity .55s ease .1s}
+.extra.show{max-height:520px;opacity:1}
+.step{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 4px;border-bottom:1px solid var(--line-soft);text-align:left}
+.step:first-child{border-top:1px solid var(--line-soft)}
+.step-label b{font-family:Cinzel,serif;font-weight:500;font-size:.98rem;letter-spacing:.1em;color:var(--mist);display:block}
+.step-label small{font-size:.62rem;font-weight:400;letter-spacing:.2em;text-transform:uppercase;color:rgba(200,216,205,.6)}
+.step-ctrl{display:flex;align-items:center;gap:14px}
+.step-ctrl button{width:44px;height:44px;border-radius:12px;border:1px solid var(--line);color:var(--gold-bright);font-size:1.35rem;line-height:1;display:grid;place-items:center;background:rgba(241,227,181,.05);transition:background .25s,transform .2s,border-color .25s}
+.step-ctrl button:hover{background:rgba(241,227,181,.14)}
+.step-ctrl button:active{transform:scale(.9)}
+.step-ctrl output{font-family:Cinzel,serif;font-size:1.35rem;font-weight:600;min-width:32px;text-align:center;color:var(--gold-bright);font-variant-numeric:tabular-nums}
+.soft{font-weight:300;font-size:.98rem;color:var(--mist-dim);line-height:1.85;padding:4px 2px 10px}
+.closing{font-weight:300;font-size:clamp(1rem,4.4vw,1.1rem);line-height:2;color:var(--mist-dim);max-width:40ch;margin:0 auto;text-align:center;letter-spacing:.02em}
+
+#view-invite{padding:0}
+.invite-scroll{min-height:100%;padding:clamp(26px,7vh,60px) 0 90px}
+.invite-foot{display:grid;gap:9px;justify-items:center;padding:46px 20px 22px;text-align:center}
+.invite-foot .kufi{font-size:1.4rem;color:var(--gold-bright)}
+.invite-foot p{font-size:.6rem;font-weight:500;letter-spacing:.4em;text-indent:.4em;text-transform:uppercase;color:rgba(217,189,127,.65)}
+
+.music-btn{position:fixed;top:max(14px,env(safe-area-inset-top));right:16px;z-index:70;width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:rgba(6,32,24,.6);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line);color:var(--gold-bright);box-shadow:0 10px 26px -10px rgba(0,0,0,.7);transition:transform .3s}
+.music-btn:hover{transform:scale(1.06)}
+.music-btn svg{width:20px;height:20px}
+.music-btn .off{display:none}
+.music-btn[aria-pressed="false"] .on{display:none}
+.music-btn[aria-pressed="false"] .off{display:block}
+.music-btn.playing{animation:musicGlow 2.6s ease-in-out infinite}
+@keyframes musicGlow{0%,100%{box-shadow:0 10px 26px -10px rgba(0,0,0,.7)}50%{box-shadow:0 10px 26px -10px rgba(0,0,0,.7),0 0 18px 2px rgba(241,227,181,.32)}}
+.toast{position:fixed;left:50%;bottom:max(22px,env(safe-area-inset-bottom));z-index:80;transform:translate(-50%,140%);max-width:88vw;background:rgba(5,28,21,.94);backdrop-filter:blur(8px);color:var(--mist);border:1px solid var(--line);border-radius:12px;padding:13px 22px;font-size:.72rem;font-weight:400;letter-spacing:.1em;text-align:center;transition:transform .5s cubic-bezier(.2,.9,.3,1.2);pointer-events:none}
+.toast.show{transform:translate(-50%,0)}
+
+.hidden{display:none!important}
+noscript{position:fixed;inset:0;z-index:200;background:var(--em-0);color:var(--mist);display:grid;place-items:center;padding:30px;text-align:center;font-size:1.05rem;line-height:1.9}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.15s!important}
+  #bokeh,#burst{display:none}
+  body::before{animation:none}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<noscript>You are graciously invited to the Walima reception of Junaid &amp; Mahra at The Oasis Palace, 35145 Newark Blvd, Newark, CA 94560. Dinner served at 9:00 PM. Please enable JavaScript to view the full invitation.</noscript>
+
+<div class="veil" id="veil" aria-hidden="true">
+  <div class="veil-star">
+    <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M50 6 L74 20 L88 44 L88 56 L74 80 L50 94 L26 80 L12 56 L12 44 L26 20 Z"/><path d="M50 22 L68 32 L78 50 L68 68 L50 78 L32 68 L22 50 L32 32 Z"/></svg>
+    <span>J·M</span>
+  </div>
+</div>
+
+<canvas id="bokeh" aria-hidden="true"></canvas>
+<canvas id="burst" aria-hidden="true"></canvas>
+
+<!-- music toggle -->
+<button id="musicBtn" class="music-btn" aria-pressed="false" aria-label="Turn music on">
+  <svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+  <svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V7l7-1.2M21 3 3 21"/><circle cx="6" cy="18" r="3"/></svg>
+</button>
+
+<main>
+  <!-- ======================= OPENING ======================= -->
+  <section id="view-opening" class="view active" aria-label="Enter the reception">
+    <div class="gate-stage" id="gateStage">
+      <p class="gate-eyebrow">Walima · Reception</p>
+      <p class="gate-kufi" lang="ar" dir="rtl">أهلًا وسهلًا</p>
+      <h1 class="gate-title">Junaid &amp; Mahra</h1>
+      <div class="gate-scene">
+        <div class="gate" id="gate" role="button" tabindex="0" aria-label="Touch the handle to enter the invitation">
+          <div class="gate-frame"></div>
+          <div class="gate-doors"><div class="gate-light"></div><div class="door left"></div><div class="door right"></div></div>
+          <svg class="gate-draw" viewBox="0 0 356 496" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M6 490 L6 178 A172 172 0 0 1 350 178 L350 490 Z"/></svg>
+          <button class="handle" id="handle" aria-label="Open the doors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><path d="M12 8v4"/></svg></button>
+        </div>
+      </div>
+      <p class="gate-hint" id="gateHint">Touch The Handle To Enter</p>
+    </div>
+  </section>
+
+  <!-- ======================= INVITATION (RSVP at the end) ======================= -->
+  <section id="view-invite" class="view" aria-label="Reception invitation">
+    <div class="invite-scroll">
+      <div class="wrap">
+
+        <!-- Qur'anic verse -->
+        <header class="panel reveal center">
+          <svg class="panel-edge" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M8 1 H92 L99 8 V92 L92 99 H8 L1 92 V8 Z" vector-effect="non-scaling-stroke"/></svg>
+          <div class="stack">
+            <p class="kufi" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+            <p class="arabic" lang="ar" dir="rtl">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً</p>
+            <div class="rule" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 2 L15 9 L22 12 L15 15 L12 22 L9 15 L2 12 L9 9 Z"/></svg></div>
+            <p class="translation">“And among His signs is that He created for you mates from among yourselves that you may find tranquility in them, and He placed between you affection and mercy.”</p>
+            <p class="cite">Qur’an 30:21 · Surah Ar‑Rum</p>
+          </div>
+        </header>
+
+        <!-- Host & couple -->
+        <section class="panel reveal center">
+          <svg class="panel-edge" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M8 1 H92 L99 8 V92 L92 99 H8 L1 92 V8 Z" vector-effect="non-scaling-stroke"/></svg>
+          <div class="stack">
+            <p class="eyebrow">Reception Invitation</p>
+            <p class="host-line"><b>Mr.&nbsp;&amp; Mrs. Amjad Ali Mohammed</b> invite you to celebrate the reception of their beloved son</p>
+            <div><h2 class="name">Junaid Mohammed</h2><p class="role" style="margin-top:8px">The Groom</p></div>
+            <div class="knot" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 2 L15 9 L22 12 L15 15 L12 22 L9 15 L2 12 L9 9 Z"/></svg></div>
+            <div><h2 class="name">Mahra Abubaker Balahawal</h2><p class="role" style="margin-top:8px">The Bride</p></div>
+          </div>
+        </section>
+
+        <!-- Dinner details with scratch-to-reveal -->
+        <section class="panel reveal center">
+          <svg class="panel-edge" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M8 1 H92 L99 8 V92 L92 99 H8 L1 92 V8 Z" vector-effect="non-scaling-stroke"/></svg>
+          <div class="stack">
+            <h3 class="event-word">Walima</h3>
+            <p class="time-lead">The evening begins as we gather for dinner at</p>
+            <p class="time-big">9:00 PM</p>
+            <div class="rule" aria-hidden="true"><span>◆</span></div>
+            <p class="note-line">We request the honour of your presence for an evening of gratitude, love, and celebration.</p>
+
+            <div class="scratch-wrap" id="scratchWrap">
+              <p class="scratch-hint" id="scratchHint">✦ Scratch below to reveal the date ✦</p>
+              <div class="scratch-card">
+                <div class="scratch-reveal" id="scratchReveal">
+                  <p class="date-line" id="dateLine">Friday, 16 October 2026</p>
+                  <div class="cd" id="countdown" aria-label="Countdown to the reception">
+                    <div class="unit"><b id="cdD">0</b><small>Days</small></div>
+                    <div class="unit"><b id="cdH">0</b><small>Hours</small></div>
+                    <div class="unit"><b id="cdM">0</b><small>Min</small></div>
+                    <div class="unit"><b id="cdS">0</b><small>Sec</small></div>
+                  </div>
+                </div>
+                <canvas class="scratch-canvas" id="scratchCanvas" aria-label="Scratch to reveal the date and countdown"></canvas>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Venue -->
+        <section class="panel reveal center">
+          <svg class="panel-edge" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M8 1 H92 L99 8 V92 L92 99 H8 L1 92 V8 Z" vector-effect="non-scaling-stroke"/></svg>
+          <div class="stack" style="width:100%">
+            <p class="eyebrow">The Venue</p>
+            <h3 class="venue-name">The Oasis Palace</h3>
+            <p class="addr">35145 Newark Blvd<br>Newark, CA 94560</p>
+            <div class="map-frame">
+              <iframe title="Map to The Oasis Palace, Newark CA" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=The%20Oasis%20Palace%2C%2035145%20Newark%20Blvd%2C%20Newark%2C%20CA%2094560&output=embed"></iframe>
+            </div>
+            <div class="btn-row two">
+              <a class="btn btn-gold" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=The%20Oasis%20Palace%2C%2035145%20Newark%20Blvd%2C%20Newark%2C%20CA%2094560">Get Directions</a>
+              <button class="btn btn-ghost hidden" id="btnCalendar">Add To Calendar</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Closing -->
+        <section class="panel reveal center">
+          <svg class="panel-edge" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M8 1 H92 L99 8 V92 L92 99 H8 L1 92 V8 Z" vector-effect="non-scaling-stroke"/></svg>
+          <div class="stack">
+            <div class="rule" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 2 L15 9 L22 12 L15 15 L12 22 L9 15 L2 12 L9 9 Z"/></svg></div>
+            <p class="closing" id="closingMsg">Your gracious presence will be the greatest gift as we celebrate this joyous occasion together. We look forward to welcoming you.</p>
+            <div class="btn-row two" style="margin-top:6px">
+              <button class="btn btn-gold" id="btnShare">Share Invitation</button>
+              <a class="btn btn-ghost hidden" id="btnCall" href="#" title="Jawad Ali Mohammed · +1 510 556 9297">Call Jawad</a>
+            </div>
+            <p class="note-line" style="margin-top:4px">For any queries, please reach <b style="font-weight:500;color:var(--mist)">Jawad Ali Mohammed</b></p>
+          </div>
+        </section>
+
+        <!-- ===== RSVP — the final act ===== -->
+        <section class="panel reveal center" id="rsvpPanel">
+          <svg class="panel-edge" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M8 1 H92 L99 8 V92 L92 99 H8 L1 92 V8 Z" vector-effect="non-scaling-stroke"/></svg>
+          <div class="stack" style="gap:22px;width:100%">
+            <div>
+              <p class="eyebrow">Kindly Respond</p>
+              <h2 class="rsvp-title" style="margin-top:10px">Will You Join Us?</h2>
+              <p class="rsvp-sub" style="margin-top:8px">Let us know if we may welcome you at nine</p>
+            </div>
+            <label class="field" id="nameField" style="width:100%"><span>Your Full Name</span><input id="guestName" type="text" autocomplete="name" placeholder="e.g. Ahmed &amp; Fatima Khan" maxlength="60"></label>
+            <p class="q">Will you be attending?</p>
+            <div class="choice" style="width:100%">
+              <button id="btnYes" class="btn btn-gold">Yes, InshaAllah</button>
+              <button id="btnNo" class="btn btn-ghost">Regretfully, No</button>
+            </div>
+            <div id="yesExtra" class="extra" style="width:100%" aria-live="polite">
+              <div class="step"><div class="step-label"><b>Adults</b><small>Guests joining</small></div><div class="step-ctrl"><button data-step="adults" data-dir="-1" aria-label="Fewer adults">−</button><output id="adultsOut">1</output><button data-step="adults" data-dir="1" aria-label="More adults">+</button></div></div>
+              <div class="step" style="margin-bottom:18px"><div class="step-label"><b>Children</b><small>Below 5 years</small></div><div class="step-ctrl"><button data-step="children" data-dir="-1" aria-label="Fewer children">−</button><output id="childrenOut">0</output><button data-step="children" data-dir="1" aria-label="More children">+</button></div></div>
+              <button id="btnSubmit" class="btn btn-gold btn-wide">Submit RSVP</button>
+            </div>
+            <div id="noExtra" class="extra" style="width:100%" aria-live="polite">
+              <p class="soft" id="noMessage">Well… you won’t be missed. 😌 But you <i>are</i> missing out on a truly beautiful evening. The invitation stays open should you change your mind — either way, our warmest du’as go with you.</p>
+              <button id="btnViewAnyway" class="btn btn-ghost btn-wide">Done</button>
+            </div>
+            <div class="chip hidden" id="rsvpChip"><b>✓</b><span id="rsvpChipText"></span><button id="btnEditRsvp">Edit</button></div>
+          </div>
+        </section>
+
+        <footer class="invite-foot">
+          <p class="kufi" lang="ar" dir="rtl">بَارَكَ اللهُ لَهُمَا وَبَارَكَ عَلَيْهِمَا</p>
+          <p>May Allah bless them both</p>
+        </footer>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script>
+/* ============================================================
+   CONFIG — edit here. Date is set; add phone / RSVP endpoint / music when ready.
+   ============================================================ */
+const CONFIG = {
+  eventKey: 'walima-junaid-mahra',
+  eventTitle: 'Walima Reception of Junaid & Mahra',
+  eventDateISO: '2026-10-16',                 // Friday, October 16, 2026
+  eventTime: '21:00',                         // dinner served at 9:00 PM
+  eventDurationHours: 3,
+  venueName: 'The Oasis Palace',
+  venueAddress: '35145 Newark Blvd, Newark, CA 94560',
+  hostPhone: '+15105569297',                  // Jawad Ali Mohammed — for any queries
+  rsvpEndpoint: '',                           // paste your Google Apps Script / Formspree URL to collect RSVPs
+  musicSrc: '',                               // paste an .mp3 URL (or filename in the same repo) to enable music
+  shareText: 'You are graciously invited to the Walima reception of Junaid & Mahra at The Oasis Palace, Newark, CA — dinner at 9:00 PM. Tap to open the invitation:'
+};
+
+const $ = (s, el = document) => el.querySelector(s);
+const $$ = (s, el = document) => [...el.querySelectorAll(s)];
+const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const rand = (a, b) => a + Math.random() * (b - a);
+const firstName = n => n.split(/\s+/)[0];
+const state = { attending: null, adults: 1, children: 0 };
+
+window.addEventListener('load', () => setTimeout(() => $('#veil').classList.add('gone'), 500));
+setTimeout(() => $('#veil').classList.add('gone'), 3200);
+
+/* ============================================================
+   CHAMPAGNE BOKEH — rising golden light
+   ============================================================ */
+(function bokeh() {
+  const cv = $('#bokeh'), ctx = cv.getContext('2d');
+  let W, H, orbs = [];
+  function size() { W = cv.width = innerWidth * devicePixelRatio; H = cv.height = innerHeight * devicePixelRatio; cv.style.width = innerWidth + 'px'; cv.style.height = innerHeight + 'px'; }
+  function make(anyY, big = false) { const r = (big ? rand(16, 34) : rand(1.4, 3.6)) * devicePixelRatio; return { x: Math.random() * W, y: anyY ? Math.random() * H : H + r * 3, r, big, vy: rand(6, big ? 10 : 22) / 60 * devicePixelRatio, drift: rand(-.25, .25) * devicePixelRatio, ph: Math.random() * Math.PI * 2, a: big ? rand(.045, .09) : rand(.3, .75) }; }
+  function seed() { orbs = []; const n = Math.min(34, Math.round(innerWidth / 13)); for (let i = 0; i < n; i++) orbs.push(make(true)); for (let i = 0; i < 7; i++) orbs.push(make(true, true)); }
+  function draw(t) {
+    ctx.clearRect(0, 0, W, H);
+    for (const o of orbs) {
+      o.y -= o.vy; o.ph += .006; o.x += o.drift + Math.sin(o.ph) * .25 * devicePixelRatio;
+      if (o.y < -o.r * 4) Object.assign(o, make(false, o.big));
+      const tw = o.big ? 1 : (.6 + .4 * Math.sin(t * .0012 + o.ph * 4));
+      const g = ctx.createRadialGradient(o.x, o.y, 0, o.x, o.y, o.r * (o.big ? 1.6 : 3));
+      g.addColorStop(0, `rgba(241,227,181,${o.a * tw})`); g.addColorStop(.5, `rgba(217,189,127,${o.a * tw * .4})`); g.addColorStop(1, 'rgba(217,189,127,0)');
+      ctx.fillStyle = g; ctx.beginPath(); ctx.arc(o.x, o.y, o.r * (o.big ? 1.6 : 3), 0, 7); ctx.fill();
+    }
+  }
+  let raf; function loop(t) { draw(t); raf = requestAnimationFrame(loop); }
+  size(); seed(); addEventListener('resize', () => { size(); seed(); });
+  if (!reducedMotion) raf = requestAnimationFrame(loop);
+  document.addEventListener('visibilitychange', () => { if (reducedMotion) return; if (document.hidden) cancelAnimationFrame(raf); else raf = requestAnimationFrame(loop); });
+})();
+
+/* ============================================================
+   VIEW MANAGER
+   ============================================================ */
+function show(id) { $$('.view').forEach(v => v.classList.toggle('active', v.id === id)); const v = $('#' + id); if (v) v.scrollTop = 0; if (id === 'view-invite') requestAnimationFrame(observeReveals); }
+
+/* ============================================================
+   OPENING — the doors part and you step through
+   ============================================================ */
+const gate = $('#gate');
+let opened = false;
+function enter() {
+  if (opened) return; opened = true;
+  $('#gateHint').classList.add('hide'); gate.classList.add('open');
+  if (navigator.vibrate) navigator.vibrate(18);
+  startMusic(true);
+  const wait = reducedMotion ? 250 : 1500;
+  setTimeout(() => { $('#gateStage').classList.add('through'); setTimeout(() => show('view-invite'), reducedMotion ? 150 : 750); }, wait);
+}
+gate.addEventListener('click', enter);
+gate.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); enter(); } });
+
+/* ============================================================
+   SCRATCH-TO-REVEAL — date & countdown under gold foil
+   ============================================================ */
+(function scratch() {
+  const canvas = $('#scratchCanvas'), hint = $('#scratchHint'), reveal = $('#scratchReveal');
+  let ctx, cleared = false, drawing = false, dpr = Math.min(devicePixelRatio || 1, 2);
+  function paintFoil() {
+    const r = reveal.getBoundingClientRect();
+    canvas.width = r.width * dpr; canvas.height = r.height * dpr;
+    ctx = canvas.getContext('2d'); ctx.scale(dpr, dpr);
+    const g = ctx.createLinearGradient(0, 0, r.width, r.height);
+    g.addColorStop(0, '#b89a4e'); g.addColorStop(.35, '#f1e3b5'); g.addColorStop(.5, '#fff6d8'); g.addColorStop(.65, '#d9bd7f'); g.addColorStop(1, '#9c7c3c');
+    ctx.fillStyle = g; ctx.fillRect(0, 0, r.width, r.height);
+    ctx.fillStyle = 'rgba(6,37,28,.14)';
+    for (let y = 8; y < r.height; y += 18) for (let x = (y / 18 % 2 ? 14 : 4); x < r.width; x += 18) { ctx.beginPath(); ctx.arc(x, y, 1.4, 0, 7); ctx.fill(); }
+    ctx.fillStyle = 'rgba(6,37,28,.85)'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.font = '600 13px Jost, sans-serif';
+    ctx.fillText('✦  SCRATCH HERE  ✦', r.width / 2, r.height / 2);
+    ctx.globalCompositeOperation = 'destination-out';
+  }
+  function pos(e) { const r = canvas.getBoundingClientRect(); const p = e.touches ? e.touches[0] : e; return { x: p.clientX - r.left, y: p.clientY - r.top }; }
+  function scratchAt(x, y) { ctx.beginPath(); ctx.arc(x, y, 22, 0, 7); ctx.fill(); }
+  function percentCleared() { const img = ctx.getImageData(0, 0, canvas.width, canvas.height).data; let clear = 0; const step = 40; for (let i = 3; i < img.length; i += 4 * step) if (img[i] === 0) clear++; return clear / (img.length / (4 * step)); }
+  function maybeFinish() { if (cleared) return; if (percentCleared() > .55) { cleared = true; canvas.classList.add('cleared'); hint.classList.add('gone'); if (navigator.vibrate) navigator.vibrate(20); } }
+  function start(e) { if (cleared) return; drawing = true; const { x, y } = pos(e); scratchAt(x, y); e.preventDefault(); }
+  function move(e) { if (!drawing || cleared) return; const { x, y } = pos(e); scratchAt(x, y); e.preventDefault(); }
+  function end() { if (!drawing) return; drawing = false; maybeFinish(); }
+  function init() {
+    if (reducedMotion) { canvas.classList.add('cleared'); hint.classList.add('gone'); return; }
+    paintFoil();
+    canvas.addEventListener('mousedown', start); canvas.addEventListener('mousemove', move); addEventListener('mouseup', end);
+    canvas.addEventListener('touchstart', start, { passive: false }); canvas.addEventListener('touchmove', move, { passive: false }); canvas.addEventListener('touchend', end);
+  }
+  const io = new IntersectionObserver((es) => { es.forEach(e => { if (e.isIntersecting && !ctx) { init(); io.disconnect(); } }); });
+  io.observe($('#scratchWrap'));
+  addEventListener('resize', () => { if (ctx && !cleared) paintFoil(); });
+})();
+
+/* ============================================================
+   RSVP
+   ============================================================ */
+const nameInput = $('#guestName');
+function pick(attending) { state.attending = attending; $('#btnYes').classList.toggle('picked', attending); $('#btnNo').classList.toggle('picked', !attending); $('#yesExtra').classList.toggle('show', attending); $('#noExtra').classList.toggle('show', !attending); }
+$('#btnYes').addEventListener('click', () => pick(true));
+$('#btnNo').addEventListener('click', () => pick(false));
+$$('[data-step]').forEach(btn => btn.addEventListener('click', () => { const key = btn.dataset.step, dir = +btn.dataset.dir, min = key === 'adults' ? 1 : 0; state[key] = Math.min(15, Math.max(min, state[key] + dir)); $('#adultsOut').textContent = state.adults; $('#childrenOut').textContent = state.children; if (navigator.vibrate) navigator.vibrate(8); }));
+function validName() { if (nameInput.value.trim().length >= 2) return true; const f = $('#nameField'); f.classList.remove('shake'); void f.offsetWidth; f.classList.add('shake'); nameInput.focus(); toast('Please enter your name first'); return false; }
+function saveRSVP(data) { localStorage.setItem(CONFIG.eventKey + ':rsvp', JSON.stringify(data)); if (CONFIG.rsvpEndpoint) fetch(CONFIG.rsvpEndpoint, { method: 'POST', mode: 'no-cors', keepalive: true, headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(data) }).catch(() => {}); }
+function loadRSVP() { try { return JSON.parse(localStorage.getItem(CONFIG.eventKey + ':rsvp')); } catch { return null; } }
+function submitRSVP(attending) {
+  if (!validName()) return;
+  const data = { event: CONFIG.eventKey, name: nameInput.value.trim(), attending, adults: attending ? state.adults : 0, children: attending ? state.children : 0, submittedAt: new Date().toISOString() };
+  saveRSVP(data); applyRSVP(data);
+  if (attending) { $('#btnSubmit').disabled = true; goldBurst(); toast('JazakAllah Khair — your RSVP is received ✨'); setTimeout(() => { $('#btnSubmit').disabled = false; $('#rsvpChip').scrollIntoView({ behavior: 'smooth', block: 'center' }); }, 900); }
+  else { toast('Response noted — thank you'); }
+}
+$('#btnSubmit').addEventListener('click', () => submitRSVP(true));
+$('#btnViewAnyway').addEventListener('click', () => submitRSVP(false));
+function applyRSVP(d) {
+  if (!d) return;
+  pick(!!d.attending);
+  if (d.attending) { state.adults = Math.max(1, d.adults || 1); state.children = d.children || 0; $('#adultsOut').textContent = state.adults; $('#childrenOut').textContent = state.children; }
+  nameInput.value = d.name;
+  const chip = $('#rsvpChip'); chip.classList.remove('hidden');
+  $('#rsvpChipText').textContent = d.attending ? `RSVP received for ${d.name} · ${d.adults + d.children} guest${d.adults + d.children > 1 ? 's' : ''}` : `Response received for ${d.name}`;
+  if (d.attending) $('#closingMsg').textContent = `Dear ${firstName(d.name)}, your gracious presence will be the greatest gift as we celebrate this joyous occasion together. We look forward to welcoming you.`;
+}
+$('#btnEditRsvp').addEventListener('click', () => { $('#rsvpChip').classList.add('hidden'); $('#rsvpPanel').scrollIntoView({ behavior: 'smooth', block: 'start' }); nameInput.focus(); });
+
+/* ============================================================
+   GOLD BURST — geometric champagne confetti on submit
+   ============================================================ */
+function goldBurst() {
+  if (reducedMotion) return;
+  const cv = $('#burst'), ctx = cv.getContext('2d');
+  cv.width = innerWidth * devicePixelRatio; cv.height = innerHeight * devicePixelRatio;
+  const dpr = devicePixelRatio; const btn = $('#btnSubmit').getBoundingClientRect();
+  const ox = (btn.left + btn.width / 2) * dpr, oy = (btn.top + btn.height / 2) * dpr;
+  const colors = ['#f1e3b5', '#d9bd7f', '#c2a054', '#f8efce', '#a5cdb6'];
+  const shards = Array.from({ length: 90 }, () => ({ x: ox, y: oy, vx: rand(-5, 5) * dpr, vy: rand(-9, -2.5) * dpr, w: rand(3, 6) * dpr, h: rand(8, 15) * dpr, rot: rand(0, 7), vr: rand(-.22, .22), spin: rand(.05, .16), ph: rand(0, 7), c: colors[Math.random() * colors.length | 0], life: 1 }));
+  const stars = Array.from({ length: 22 }, () => ({ x: ox, y: oy, vx: rand(-5.5, 5.5) * dpr, vy: rand(-7.5, -1) * dpr, r: rand(2, 4) * dpr, rot: rand(0, 7), life: 1 }));
+  let frames = 0;
+  (function anim() {
+    ctx.clearRect(0, 0, cv.width, cv.height);
+    for (const s of shards) { s.vy += .13 * dpr; s.vx *= .992; s.x += s.vx; s.y += s.vy; s.rot += s.vr; s.ph += s.spin; s.life -= .0042; const flip = Math.sin(s.ph); ctx.save(); ctx.translate(s.x, s.y); ctx.rotate(s.rot); ctx.scale(1, Math.max(.15, Math.abs(flip))); ctx.globalAlpha = Math.max(0, s.life); ctx.fillStyle = flip > 0 ? s.c : '#8f6f34'; ctx.fillRect(-s.w / 2, -s.h / 2, s.w, s.h); ctx.restore(); }
+    for (const st of stars) { st.vy += .1 * dpr; st.x += st.vx; st.y += st.vy; st.rot += .06; st.life -= .011; ctx.save(); ctx.translate(st.x, st.y); ctx.rotate(st.rot); ctx.globalAlpha = Math.max(0, st.life); ctx.strokeStyle = '#f8efce'; ctx.lineWidth = 1.4 * dpr; ctx.lineCap = 'round'; ctx.beginPath(); ctx.moveTo(-st.r, 0); ctx.lineTo(st.r, 0); ctx.moveTo(0, -st.r); ctx.lineTo(0, st.r); ctx.stroke(); ctx.restore(); }
+    ctx.globalAlpha = 1; if (++frames < 260) requestAnimationFrame(anim); else ctx.clearRect(0, 0, cv.width, cv.height);
+  })();
+}
+
+/* ============================================================
+   SCROLL REVEALS
+   ============================================================ */
+let revealObs;
+function observeReveals() { if (revealObs) revealObs.disconnect(); revealObs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); revealObs.unobserve(e.target); } }), { root: $('#view-invite'), threshold: .12 }); $$('.reveal').forEach(el => revealObs.observe(el)); }
+
+/* ============================================================
+   COUNTDOWN + DATE
+   ============================================================ */
+(function countdown() {
+  const target = new Date(CONFIG.eventDateISO + 'T' + (CONFIG.eventTime || '21:00'));
+  if (isNaN(target)) return;
+  $('#dateLine').textContent = target.toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+  const pad = n => String(n).padStart(2, '0');
+  function tick() {
+    const d = target - Date.now();
+    if (d <= 0) { $('#countdown').innerHTML = '<div class="unit" style="min-width:auto;padding:12px 20px"><b>The evening is here — Alhamdulillah</b></div>'; return; }
+    $('#cdD').textContent = Math.floor(d / 864e5); $('#cdH').textContent = pad(Math.floor(d / 36e5) % 24); $('#cdM').textContent = pad(Math.floor(d / 6e4) % 60); $('#cdS').textContent = pad(Math.floor(d / 1e3) % 60);
+    setTimeout(tick, 1000);
+  }
+  tick();
+  const ld = document.createElement('script'); ld.type = 'application/ld+json';
+  ld.textContent = JSON.stringify({ '@context': 'https://schema.org', '@type': 'Event', name: CONFIG.eventTitle, startDate: CONFIG.eventDateISO + 'T' + CONFIG.eventTime, location: { '@type': 'Place', name: CONFIG.venueName, address: CONFIG.venueAddress } });
+  document.head.appendChild(ld);
+})();
+
+/* ============================================================
+   ADD TO CALENDAR (.ics)
+   ============================================================ */
+(function calendarBtn() {
+  const btn = $('#btnCalendar'); btn.classList.remove('hidden');
+  btn.addEventListener('click', () => {
+    const [h, m] = (CONFIG.eventTime || '21:00').split(':').map(Number);
+    const start = new Date(CONFIG.eventDateISO + 'T00:00'); start.setHours(h, m, 0, 0);
+    const end = new Date(start.getTime() + (CONFIG.eventDurationHours || 3) * 36e5);
+    const fmt = d => d.getFullYear() + String(d.getMonth() + 1).padStart(2, '0') + String(d.getDate()).padStart(2, '0') + 'T' + String(d.getHours()).padStart(2, '0') + String(d.getMinutes()).padStart(2, '0') + '00';
+    const ics = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Walima Invite//EN', 'BEGIN:VEVENT', 'UID:' + CONFIG.eventKey + '@invite', 'DTSTAMP:' + fmt(new Date()), 'DTSTART:' + fmt(start), 'DTEND:' + fmt(end), 'SUMMARY:' + CONFIG.eventTitle, 'DESCRIPTION:Dinner served at 9:00 PM.', 'LOCATION:' + CONFIG.venueName + '\\, ' + CONFIG.venueAddress.replace(/,/g, '\\,'), 'END:VEVENT', 'END:VCALENDAR'].join('\r\n');
+    const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([ics], { type: 'text/calendar' })); a.download = 'walima-junaid-mahra.ics'; document.body.appendChild(a); a.click(); a.remove(); toast('Calendar file downloaded');
+  });
+})();
+
+/* ============================================================
+   SHARE + CALL
+   ============================================================ */
+$('#btnShare').addEventListener('click', async () => {
+  const url = location.href; const payload = { title: CONFIG.eventTitle, text: CONFIG.shareText, url };
+  if (navigator.share) { try { await navigator.share(payload); } catch {} }
+  else { try { await navigator.clipboard.writeText(CONFIG.shareText + ' ' + url); toast('Invitation link copied'); } catch { toast(url); } }
+});
+if (CONFIG.hostPhone) { const c = $('#btnCall'); c.href = 'tel:' + CONFIG.hostPhone; c.classList.remove('hidden'); }
+
+/* ============================================================
+   MUSIC — plays your CONFIG.musicSrc mp3 on loop. Toggle floats top-right.
+   ============================================================ */
+const musicBtn = $('#musicBtn');
+let audioOn = false, audioEl = null;
+function haveMusic() { return !!CONFIG.musicSrc; }
+if (!haveMusic()) musicBtn.classList.add('hidden');
+function startMusic() {
+  if (audioOn || !haveMusic()) return;
+  if (!audioEl) { audioEl = new Audio(CONFIG.musicSrc); audioEl.loop = true; audioEl.volume = .55; audioEl.preload = 'auto'; }
+  audioEl.play().then(() => { audioOn = true; musicBtn.setAttribute('aria-pressed', 'true'); musicBtn.setAttribute('aria-label', 'Turn music off'); musicBtn.classList.add('playing'); }).catch(() => {});
+}
+function stopMusic() { if (!audioOn) return; audioEl.pause(); audioOn = false; musicBtn.setAttribute('aria-pressed', 'false'); musicBtn.setAttribute('aria-label', 'Turn music on'); musicBtn.classList.remove('playing'); }
+musicBtn.addEventListener('click', () => audioOn ? stopMusic() : startMusic());
+
+/* ============================================================
+   TOAST
+   ============================================================ */
+let toastT;
+function toast(msg) { const el = $('#toast'); el.textContent = msg; el.classList.add('show'); clearTimeout(toastT); toastT = setTimeout(() => el.classList.remove('show'), 2800); }
+
+/* ============================================================
+   RETURNING GUESTS
+   ============================================================ */
+applyRSVP(loadRSVP());
+</script>
+</body>
+</html>
